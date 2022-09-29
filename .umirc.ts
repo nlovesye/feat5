@@ -1,7 +1,16 @@
 import { defineConfig } from '@umijs/max';
 
 export default defineConfig({
-  antd: {},
+  antd: {
+    // configProvider
+    configProvider: {},
+    // themes
+    dark: true,
+    // babel-plugin-import
+    import: true,
+    // less or css, default less
+    style: 'less',
+  },
   access: {},
   model: {},
   initialState: {},
@@ -30,6 +39,7 @@ export default defineConfig({
       component: './Table',
     },
   ],
+  theme: { '@primary-color': '#1DA57A' },
   // 国际化
   locale: {
     // 默认使用 src/locales/zh-CN.ts 作为多语言文件
@@ -38,4 +48,3 @@ export default defineConfig({
   },
   npmClient: 'npm',
 });
-
