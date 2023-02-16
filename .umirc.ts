@@ -1,16 +1,7 @@
 import { defineConfig } from '@umijs/max';
 
 export default defineConfig({
-  antd: {
-    // configProvider
-    configProvider: {},
-    // themes
-    dark: true,
-    // babel-plugin-import
-    import: true,
-    // less or css, default less
-    style: 'less',
-  },
+  antd: {},
   access: {},
   model: {},
   initialState: {},
@@ -37,6 +28,11 @@ export default defineConfig({
       name: ' CRUD 示例',
       path: '/table',
       component: './Table',
+    },
+    {
+      name: '播放器',
+      path: '/player',
+      component: './Player',
     },
   ],
   theme: { '@primary-color': '#1DA57A' },
